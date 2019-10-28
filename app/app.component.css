@@ -5,7 +5,7 @@
   bottom  : 0;
   top : 0;
   height  : 100%;
-  width   : 3px;  /* or 100px */
+  width   : 2px;  /* or 100px */
   background: blue;
   left: 1.29rem;
 }
