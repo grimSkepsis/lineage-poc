@@ -4,7 +4,7 @@
         <a routerLink="./normal" hidden aria-hidden="true">
         </a>
         <clr-icon shape="circle" class="is-solid"  clrVerticalNavIcon></clr-icon>
-        Normal
+        {{lineageItems[0].title}}
         <clr-vertical-nav-group-children *clrIfExpanded="true">
             <a clrVerticalNavLink
                routerLink="./normal/pidgey"
@@ -15,45 +15,6 @@
                routerLink="./normal/snorlax"
                routerLinkActive="active">
                 Snorlax
-            </a>
-        </clr-vertical-nav-group-children>
-    </clr-vertical-nav-group>
-    <clr-vertical-nav-group
-            class="is-selected"
-            routerLinkActive="active">
-        <a routerLink="./fire" hidden aria-hidden="true">
-        </a>
-        <clr-icon shape="flame" class="is-solid" clrVerticalNavIcon></clr-icon>
-        Fire
-        <clr-vertical-nav-group-children *clrIfExpanded>
-            <a clrVerticalNavLink
-               routerLink="./fire/charmander"
-               routerLinkActive="active">
-                Charmander
-            </a>
-            <a clrVerticalNavLink
-               routerLink="./fire/charizard"
-               routerLinkActive="active">
-                Charizard
-            </a>
-        </clr-vertical-nav-group-children>
-    </clr-vertical-nav-group>
-    <clr-vertical-nav-group
-            routerLinkActive="active">
-        <a routerLink="./electric" hidden aria-hidden="true">
-        </a>
-        <clr-icon shape="circle" class="is-solid"  clrVerticalNavIcon></clr-icon>
-        Electric
-        <clr-vertical-nav-group-children *clrIfExpanded>
-            <a clrVerticalNavLink
-               routerLink="./electric/pikachu"
-               routerLinkActive="active">
-                Pikachu
-            </a>
-            <a clrVerticalNavLink
-               routerLink="./electric/raichu"
-               routerLinkActive="active">
-                Raichu
             </a>
         </clr-vertical-nav-group-children>
     </clr-vertical-nav-group>
