@@ -15,6 +15,10 @@
   position: relative;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 .nav-link.is-selected {
   background: lightgray;
 }

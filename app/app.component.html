@@ -12,7 +12,8 @@
                routerLink="./normal/pidgey"
                routerLinkActive="active"
                *ngFor="let child of item.children"
-               [class.is-selected]="child.isSelected">
+               [class.is-selected]="child.isSelected"
+                (click)="selectChild(item, child.title)">
                 {{child.title}}
             </a>
         </clr-vertical-nav-group-children>

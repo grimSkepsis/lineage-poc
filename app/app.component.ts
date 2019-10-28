@@ -43,7 +43,7 @@ export class AppComponent {
       ]
     },
     {
-      title: "item1",
+      title: "item3",
       isSelected: false,
       children: [
         {
@@ -57,6 +57,18 @@ export class AppComponent {
       ]
     }
   ];
+
+  selectChild(selectedItem: LineageParentItem, childName: string): void {
+    this.lineageItems.map( item => {
+      item.isSelected = false;
+      item.children.map(child => {
+        child.isSelected = false;
+      });
+      return item;
+    })
+    selectedItem.isSelected = true;
+    selectedItem.children.find(child => child.title === childName).isSelected = true;
+  }
 }
 
 interface LineageParentItem {
