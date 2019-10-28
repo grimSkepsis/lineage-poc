@@ -15,11 +15,15 @@
   position: relative;
 }
 
+.nav-link.is-selected {
+  background: lightgray;
+}
+
 ::ng-deep clr-vertical-nav-group.is-selected .nav-link:before, 
 ::ng-deep clr-vertical-nav-group.is-selected .nav-group-content:before {
-  background: red;
+  background: lightgreen;
 }
 
 ::ng-deep clr-vertical-nav-group.is-selected .nav-icon {
-  color: red;
+  color: lightgreen;
 }

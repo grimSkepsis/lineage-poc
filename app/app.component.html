@@ -1,20 +1,19 @@
 <clr-vertical-nav [clrVerticalNavCollapsible]="demoCollapsible">
     <clr-vertical-nav-group
-            routerLinkActive="active">
+            *ngFor="let item of lineageItems"
+            routerLinkActive="active"
+            [class.is-selected]="item.isSelected">
         <a routerLink="./normal" hidden aria-hidden="true">
         </a>
         <clr-icon shape="circle" class="is-solid"  clrVerticalNavIcon></clr-icon>
-        {{lineageItems[0].title}}
+        {{item.title}}
         <clr-vertical-nav-group-children *clrIfExpanded="true">
             <a clrVerticalNavLink
                routerLink="./normal/pidgey"
-               routerLinkActive="active">
-                Pidgey
-            </a>
-            <a clrVerticalNavLink
-               routerLink="./normal/snorlax"
-               routerLinkActive="active">
-                Snorlax
+               routerLinkActive="active"
+               *ngFor="let child of item.children"
+               [class.is-selected]="child.isSelected">
+                {{child.title}}
             </a>
         </clr-vertical-nav-group-children>
     </clr-vertical-nav-group>
