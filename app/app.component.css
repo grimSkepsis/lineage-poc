@@ -1,0 +1,19 @@
+ clr-vertical-nav-group clr-icon:before,
+ clr-vertical-nav-group::ng-deep .nav-group-children:before,
+ .nav-link clr-icon:before {
+  content : "";
+  position: absolute;
+  bottom  : 0;
+  top : 0;
+  height  : 100%;
+  width   : 3px;  /* or 100px */
+  background: blue;
+  left: 1.29rem;
+}
+
+clr-icon {
+}
+
+::ng-deep button.nav-group-trigger {
+  position: relative;
+}
