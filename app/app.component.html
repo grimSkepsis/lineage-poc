@@ -3,7 +3,7 @@
             routerLinkActive="active">
         <a routerLink="./normal" hidden aria-hidden="true">
         </a>
-        <clr-icon shape="user" clrVerticalNavIcon></clr-icon>
+        <clr-icon shape="circle" class="is-solid"  clrVerticalNavIcon></clr-icon>
         Normal
         <clr-vertical-nav-group-children *clrIfExpanded="true">
             <a clrVerticalNavLink
@@ -19,10 +19,11 @@
         </clr-vertical-nav-group-children>
     </clr-vertical-nav-group>
     <clr-vertical-nav-group
+            class="is-selected"
             routerLinkActive="active">
         <a routerLink="./fire" hidden aria-hidden="true">
         </a>
-        <clr-icon shape="flame" clrVerticalNavIcon></clr-icon>
+        <clr-icon shape="flame" class="is-solid" clrVerticalNavIcon></clr-icon>
         Fire
         <clr-vertical-nav-group-children *clrIfExpanded>
             <a clrVerticalNavLink
@@ -41,7 +42,7 @@
             routerLinkActive="active">
         <a routerLink="./electric" hidden aria-hidden="true">
         </a>
-        <clr-icon shape="circle" clrVerticalNavIcon></clr-icon>
+        <clr-icon shape="circle" class="is-solid"  clrVerticalNavIcon></clr-icon>
         Electric
         <clr-vertical-nav-group-children *clrIfExpanded>
             <a clrVerticalNavLink
@@ -56,8 +57,4 @@
             </a>
         </clr-vertical-nav-group-children>
     </clr-vertical-nav-group>
-    <a clrVerticalNavLink routerLinkActive="active" routerLink="./credit">
-        <clr-icon shape="certificate" clrVerticalNavIcon></clr-icon>
-        Credit
-    </a>
 </clr-vertical-nav>

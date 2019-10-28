@@ -6,11 +6,20 @@
   top : 0;
   height  : 100%;
   width   : 2px;  /* or 100px */
-  background: blue;
+  background: #575757;
   left: 1.29rem;
 }
 
 .nav-link,
  ::ng-deep .nav-group-content {
   position: relative;
+}
+
+::ng-deep clr-vertical-nav-group.is-selected .nav-link:before, 
+::ng-deep clr-vertical-nav-group.is-selected .nav-group-content:before {
+  background: red;
+}
+
+::ng-deep clr-vertical-nav-group.is-selected .nav-icon {
+  color: red;
 }
